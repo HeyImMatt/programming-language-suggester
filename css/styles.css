@@ -2,6 +2,15 @@
   margin-top: 20px;
 }
 
+.col-md-5 {
+  margin-top: 20px;
+}
+
+.row h1,
+.row h4 {
+  text-align: center;
+}
+
 .hide {
   display: none;
 }
@@ -16,14 +25,14 @@
 }
 
 .language-result {
-  width: 50%;
+  width: 55%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #results img {
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
 }
 
 #results h4 {
