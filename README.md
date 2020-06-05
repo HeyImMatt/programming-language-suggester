@@ -1,6 +1,6 @@
 # Programming Language Suggest-O-Matic
 
-![GitHub repo size](https://img.shields.io/github/repo-size/heyimmatt/programming-language-suggester)
+![GitHub repo code size](https://img.shields.io/github/languages/code-size/heyimmatt/programming-language-suggester)
 ![GitHub contributors](https://img.shields.io/github/contributors/heyimmatt/programming-language-suggester)
 ![GitHub stars](https://img.shields.io/github/stars/heyimmatt/programming-language-suggester?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/heyimmatt/programming-language-suggester?style=social)
