@@ -71,13 +71,17 @@
             <option value="d">Hisssss at it</option>
           </select>
         </div>
+        <div class="form-group well">
+          <label for="name">What is your name?</label>
+          <input type="text" id="name" class="form-control">
+        </div>
         <div class="form-buttons">
           <button type="submit" class="btn btn-primary">Get Your Results</button>
           <button type="reset" class="btn btn-default">Start Over</button>
         </div>
       </form>
       <div id="results" class="col-md-6">
-        <h4>The language you should learn is...</h4>
+        <span id="userResults"><h4>The language you should learn is...</h4></span>
         <div id="ruby" class="language-result hide">
           <h4>Ruby!</h4>
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Ruby_logo.png/599px-Ruby_logo.png" alt="Picture of the Ruby language logo">

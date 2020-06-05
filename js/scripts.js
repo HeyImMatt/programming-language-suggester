@@ -8,10 +8,12 @@ $(document).ready(function () {
       $('#question4').val(),
       $('#question5').val(),
     ];
+    const name = $('#name').val();
 
-    if (answers.indexOf(null) === -1) {
+    if (answers.indexOf(null) === -1 && name) {
       $(':submit').prop('disabled', true);
       $(':submit').addClass('disabled');
+      $('#userResults').replaceWith(`<h4>${name}, the language you should learn is...</h4>`)
       const result = calculateResults(answers);
       if (result.idSelector) {
         $(`#${result.idSelector}`)
@@ -21,7 +23,6 @@ $(document).ready(function () {
     } else {
       alert('Oops, you forgot to answer a question!')
     }
-    
   });
 
   $(':reset').click(function () {
