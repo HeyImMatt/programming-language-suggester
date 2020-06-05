@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
+
 <body>
-  
+  <div class="container">
+    <div class="row">
+      <h1>Welcome to the Programming Language Suggest-O-Matic</h1>
+      <h4>Answer the questions below to find out what programming language you should learn</h4>
+      <form id="language-survey" class="form-horizontal col-md-6">
+        <div class="form-group">
+          <label for="question1">Which of the following makes the most sense to you?</label>
+          <select class="form-control">
+            <option disabled selected hidden>Choose one...</option>
+            <option value="a">puts "Hello World"</option>
+            <option value="b">console.log("Hello World")</option>
+            <option value="c">Console.WriteLine("Hello World")</option>
+            <option value="d">print("Hello World")</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question2">Question 2</label>
+          <select class="form-control">
+            <option disabled selected hidden>Choose one...</option>
+            <option value="a">Ruby</option>
+            <option value="b">JavaScript</option>
+            <option value="c">C#</option>
+            <option value="d">Python</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question3">Question 3</label>
+          <select class="form-control">
+            <option disabled selected hidden>Choose one...</option>
+            <option value="a">Ruby</option>
+            <option value="b">JavaScript</option>
+            <option value="c">C#</option>
+            <option value="d">Python</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question4">Question 4</label>
+          <select class="form-control">
+            <option disabled selected hidden>Choose one...</option>
+            <option value="a">Ruby</option>
+            <option value="b">JavaScript</option>
+            <option value="c">C#</option>
+            <option value="d">Python</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question5">Question 5</label>
+          <select class="form-control">
+            <option disabled selected hidden>Choose one...</option>
+            <option value="a">Ruby</option>
+            <option value="b">JavaScript</option>
+            <option value="c">C#</option>
+            <option value="d">Python</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Get Your Results</button>
+        <button type="reset" class="btn btn-default">Start Over</button>
+      </form>
+    </div>
 </body>
+
 </html>
