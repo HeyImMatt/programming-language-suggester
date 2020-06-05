@@ -1,5 +1,18 @@
-const answers = ["a", "b", "c", "c", "a"];
-const result = calculateResults(answers);
+$(document).ready(function() {
+  $("form#language-survey").submit(function(event) {
+    event.preventDefault();
+    const answers = [
+      $("#question1").val(),
+      $("#question2").val(),
+      $("#question3").val(),
+      $("#question4").val(),
+      $("#question5").val(),
+    ];
+    const result = calculateResults(answers);
+    $("#results").append(result);
+    
+  })
+})
 
 function calculateResults(answerArray) {
   let aCount = 0;
@@ -32,5 +45,6 @@ function calculateResults(answerArray) {
     return 'You should learn C#!';
   } else if (dCount > aCount && dCount > bCount && dCount > cCount) {
     return 'You should learn Python!';
-  } else return 'Your answers suggest you want to learn two languages! Since you\'re indecisive, I suggest you learn a strongly typed lanugage like C#.'
+  } else return 'Your answers suggest you want to learn two languages! Since you\'re indecisive, I suggest you learn a strongly typed language like C#.'
 }
+
