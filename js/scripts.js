@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $('form#language-survey').submit(function (event) {
     event.preventDefault();
+    $(':submit').prop('disabled', true);
+    $(':submit').addClass('disabled');
     const answers = [
       $('#question1').val(),
       $('#question2').val(),
@@ -18,7 +20,10 @@ $(document).ready(function () {
   });
 
   $(':reset').click(function () {
-    $('#ruby, #javascript, #csharp, #python').addClass('hide');
+    $(':submit').prop('disabled', false);
+    $(':submit').removeClass('disabled');
+    $('#ruby, #javascript, #csharp, #python').addClass('hide')
+    $('#csharp p').remove();
   });
 });
 
