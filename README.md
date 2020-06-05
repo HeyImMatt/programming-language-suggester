@@ -8,7 +8,7 @@
 
 The Programming Language Suggest-O-Matic is a website containing a survey that you can fill out to get a recommended programming language to start learning.
 
-You can view it here: https://heyimmatt.github.io/progamming-language-suggester
+You can view it here: https://heyimmatt.github.io/programming-language-suggester
 
 **Created by: Matt McFarland**
 
