@@ -13,8 +13,10 @@ $(document).ready(function () {
     if (answers.indexOf(null) === -1 && name) {
       $(':submit').prop('disabled', true);
       $(':submit').addClass('disabled');
-      window.scrollTo(0, 0)
-      $('#userResults').replaceWith(`<h4>${name}, the language you should learn is...</h4>`)
+      window.scrollTo(0, 0);
+      $('#userResults').replaceWith(
+        `<h4>${name}, the language you should learn is...</h4>`,
+      );
       const result = calculateResults(answers);
       if (result.idSelector) {
         $(`#${result.idSelector}`)
@@ -22,17 +24,17 @@ $(document).ready(function () {
           .fadeIn(3000);
       } else $(`#${result}`).fadeIn(3000);
     } else {
-      alert('Oops, you forgot to answer a question!')
+      alert('Oops, you forgot to answer a question!');
     }
   });
 
-  $('.form-group').change(function() {
-      $(this).next().show();
-  })
+  $('.form-group').change(function () {
+    $(this).next().show();
+  });
 
   $(':reset').click(function () {
     location.reload();
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   });
 });
 
