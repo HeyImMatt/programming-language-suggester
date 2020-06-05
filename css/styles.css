@@ -14,3 +14,8 @@
 .btn-primary {
   margin-right: 5px;
 }
+
+#results img {
+  height: 200px;
+  width: 200px;
+}
