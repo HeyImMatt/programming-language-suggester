@@ -13,6 +13,7 @@ $(document).ready(function () {
     if (answers.indexOf(null) === -1 && name) {
       $(':submit').prop('disabled', true);
       $(':submit').addClass('disabled');
+      window.scrollTo(0, 0)
       $('#userResults').replaceWith(`<h4>${name}, the language you should learn is...</h4>`)
       const result = calculateResults(answers);
       if (result.idSelector) {
@@ -26,10 +27,7 @@ $(document).ready(function () {
   });
 
   $(':reset').click(function () {
-    $(':submit').prop('disabled', false);
-    $(':submit').removeClass('disabled');
-    $('#ruby, #javascript, #csharp, #python').addClass('hide')
-    $('#csharp p').remove();
+    location.reload();
   });
 });
 
