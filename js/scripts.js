@@ -10,7 +10,10 @@ $(document).ready(function() {
     ];
     const result = calculateResults(answers);
     $("#results").append(result);
-    
+    $("#results").removeClass("hide");
+  })
+  $(":reset").click(function() {
+    $("#results").addClass("hide");
   })
 })
 
