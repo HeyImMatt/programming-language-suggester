@@ -1,4 +1,4 @@
-.form-horizontal {
+.col-md-6 {
   margin-top: 20px;
 }
 
@@ -15,7 +15,20 @@
   margin-right: 5px;
 }
 
+.language-result {
+  display: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #results img {
   height: 200px;
   width: 200px;
+}
+
+#results h4 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
