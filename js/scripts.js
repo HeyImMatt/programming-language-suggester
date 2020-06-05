@@ -1,8 +1,6 @@
 $(document).ready(function () {
   $('form#language-survey').submit(function (event) {
     event.preventDefault();
-    $(':submit').prop('disabled', true);
-    $(':submit').addClass('disabled');
     const answers = [
       $('#question1').val(),
       $('#question2').val(),
@@ -10,13 +8,20 @@ $(document).ready(function () {
       $('#question4').val(),
       $('#question5').val(),
     ];
-    const result = calculateResults(answers);
 
-    if (result.idSelector) {
-      $(`#${result.idSelector}`)
-        .append(`<p>${result.pTagText}</p>`)
-        .removeClass('hide');
-    } else $(`#${result}`).removeClass('hide');
+    if (answers.indexOf(null) === -1) {
+      $(':submit').prop('disabled', true);
+      $(':submit').addClass('disabled');
+      const result = calculateResults(answers);
+      if (result.idSelector) {
+        $(`#${result.idSelector}`)
+          .append(`<p>${result.pTagText}</p>`)
+          .removeClass('hide');
+      } else $(`#${result}`).removeClass('hide');
+    } else {
+      alert('Oops, you forgot to answer a question!')
+    }
+    
   });
 
   $(':reset').click(function () {
