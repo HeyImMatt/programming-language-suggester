@@ -28,6 +28,7 @@ $(document).ready(function () {
 
   $(':reset').click(function () {
     location.reload();
+    window.scrollTo(0, 0)
   });
 });
 
@@ -66,6 +67,6 @@ function calculateResults(answerArray) {
     return {
       idSelector: 'csharp',
       pTagText:
-        "Your answers suggest you want to learn two languages! Since you're indecisive, I suggest you learn a strongly typed language!",
+        "Your answers suggest you want to learn two languages! Since you're indecisive, I suggest you learn this strongly typed language!",
     };
 }

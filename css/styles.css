@@ -6,9 +6,10 @@
   margin-top: 20px;
 }
 
-.row h1,
-.row h4 {
+.header h1,
+.header h4 {
   text-align: center;
+  color: #035a96;
 }
 
 .hide {
