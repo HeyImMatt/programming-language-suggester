@@ -26,6 +26,10 @@ $(document).ready(function () {
     }
   });
 
+  $('.form-group').change(function() {
+      $(this).next().show();
+  })
+
   $(':reset').click(function () {
     location.reload();
     window.scrollTo(0, 0)

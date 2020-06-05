@@ -12,6 +12,14 @@
   color: #035a96;
 }
 
+.form-group {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .form-buttons {
   display: flex;
   justify-content: flex-end;
