@@ -19,8 +19,8 @@ $(document).ready(function () {
       if (result.idSelector) {
         $(`#${result.idSelector}`)
           .append(`<p>${result.pTagText}</p>`)
-          .removeClass('hide');
-      } else $(`#${result}`).removeClass('hide');
+          .fadeIn(3000);
+      } else $(`#${result}`).fadeIn(3000);
     } else {
       alert('Oops, you forgot to answer a question!')
     }
