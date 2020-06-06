@@ -11,13 +11,14 @@ $(document).ready(function () {
     const name = $('#name').val();
 
     if (answers.indexOf(null) === -1 && name) {
-      $(':submit').prop('disabled', true);
-      $(':submit').addClass('disabled');
+      const result = calculateResults(answers);
+
       window.scrollTo(0, 0);
+      $(':submit').prop('disabled', true).addClass('disabled');
       $('#userResults').replaceWith(
         `<h4>${name}, the language you should learn is...</h4>`,
       );
-      const result = calculateResults(answers);
+
       if (result.idSelector) {
         $(`#${result.idSelector}`)
           .append(`<p>${result.pTagText}</p>`)
