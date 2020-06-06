@@ -33,12 +33,13 @@ To install Programming Language Suggest-O-Matic, follow these steps:
 
 Via Downloading from GitHub:
 1. Download this repository onto your machine by clicking the "Clone or Download" button
-2. Open up the index.html, styles.css, and the scripts.js files in your preferred code editor
-3. Open the index.html file in your preferred browser
+2. Download and extract the zip file to a directory of your choice
+3. Open up the index.html, styles.css, and the scripts.js files in your preferred code editor
+4. Open the index.html file in your preferred browser
 
 Via command line:
 ```
-$ git clone programming-language-suggester
+$ git clone https://github.com/HeyImMatt/programming-language-suggester.git
 
 $ cd programming-language-suggester
 
