@@ -1,5 +1,13 @@
-$(document).ready(function () {
-  $('form#language-survey').submit(function (event) {
+$(document).ready(function() {
+  $('.form-group').change(function() {
+    $(this).next().show();
+  });
+
+  $(':reset').click(function() {
+    location.reload();
+  });
+
+  $('form#language-survey').submit(function(event) {
     event.preventDefault();
     const answers = [
       $('#question1').val(),
@@ -11,31 +19,26 @@ $(document).ready(function () {
     const name = $('#name').val();
 
     if (answers.indexOf(null) === -1 && name) {
-      const result = calculateResults(answers);
-
-      window.scrollTo(0, 0);
       $(':submit').prop('disabled', true).addClass('disabled');
       $('#userResults').replaceWith(
         `<h4>${name}, the language you should learn is...</h4>`,
       );
+
+      const result = calculateResults(answers);
 
       if (result.idSelector) {
         $(`#${result.idSelector}`)
           .append(`<p>${result.pTagText}</p>`)
           .fadeIn(3000);
       } else $(`#${result}`).fadeIn(3000);
+
+      window.innerWidth >= 992
+        ? window.scrollTo(0, 0)
+        : window.scrollTo(0, document.body.scrollHeight);
+        
     } else {
       alert('Oops, you forgot to answer a question!');
     }
-  });
-
-  $('.form-group').change(function () {
-    $(this).next().show();
-  });
-
-  $(':reset').click(function () {
-    location.reload();
-    window.scrollTo(0, 0);
   });
 });
 
